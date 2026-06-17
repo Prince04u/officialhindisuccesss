@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "officialhindisuccess",
+  "compatibility_date": "2026-06-17",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "./dist/server/server.js",
+  "assets": {
+    "directory": "./dist/client"
+  }
+}
