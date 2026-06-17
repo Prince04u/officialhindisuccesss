@@ -25,7 +25,6 @@ const staticPaths = [
 "/disclaimer",
 ];
 
-```
     const entries = [
       ...staticPaths.map((p) => ({
         path: p,
@@ -81,7 +80,6 @@ const staticPaths = [
     });
   },
 },
-```
 
 },
 });
