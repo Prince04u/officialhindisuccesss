@@ -1,0 +1,225 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* =========================================================
+   Hindi Success Stories — premium editorial design system
+   Locked palette: ink #111827 · gold #D4AF37 · paper #FFFFFF
+   ========================================================= */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Brand tokens */
+  --color-ink: var(--ink);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-rule: var(--rule);
+
+  --font-serif: "Noto Serif Devanagari", "Source Serif Pro", Georgia, serif;
+  --font-sans: "Mukta", "Noto Sans Devanagari", system-ui, sans-serif;
+  --font-ui: "Inter", system-ui, sans-serif;
+
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Brand */
+  --ink: #111827;
+  --gold: #d4af37;
+  --gold-soft: #efe2b4;
+  --paper: #ffffff;
+  --surface: #f8f9fb;
+  --rule: rgba(17, 24, 39, 0.08);
+
+  /* shadcn mapping (light) */
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--paper);
+  --card-foreground: var(--ink);
+  --popover: var(--paper);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: var(--surface);
+  --secondary-foreground: var(--ink);
+  --muted: var(--surface);
+  --muted-foreground: #6b7280;
+  --accent: var(--gold);
+  --accent-foreground: var(--ink);
+  --destructive: #b91c1c;
+  --destructive-foreground: #ffffff;
+  --border: var(--rule);
+  --input: var(--rule);
+  --ring: var(--gold);
+}
+
+.dark {
+  --ink: #f5f3ee;
+  --paper: #0b0f17;
+  --surface: #131822;
+  --rule: rgba(245, 243, 238, 0.1);
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--surface);
+  --card-foreground: var(--ink);
+  --popover: var(--surface);
+  --popover-foreground: var(--ink);
+  --primary: var(--gold);
+  --primary-foreground: #0b0f17;
+  --secondary: var(--surface);
+  --secondary-foreground: var(--ink);
+  --muted: var(--surface);
+  --muted-foreground: #9ca3af;
+  --accent: var(--gold);
+  --accent-foreground: #0b0f17;
+  --border: var(--rule);
+  --input: var(--rule);
+  --ring: var(--gold);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4, h5 { font-family: var(--font-serif); letter-spacing: -0.01em; }
+  ::selection { background: color-mix(in oklab, var(--gold) 30%, transparent); }
+}
+
+/* Hide scrollbar utility */
+@utility no-scrollbar {
+  &::-webkit-scrollbar { display: none; }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Reveal animation */
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@utility animate-reveal {
+  animation: reveal 0.7s var(--ease-out-expo) both;
+}
+
+/* Editorial prose for article body */
+@utility prose-editorial {
+  font-family: var(--font-sans);
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: var(--ink);
+
+  & p { margin: 1.25em 0; }
+  & h2 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2em 0 0.6em;
+    line-height: 1.2;
+    scroll-margin-top: 6rem;
+  }
+  & h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1.6em 0 0.5em;
+    scroll-margin-top: 6rem;
+  }
+  & a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+  }
+  & a:hover { color: var(--gold); }
+  & strong { font-weight: 700; }
+  & blockquote {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-left: 3px solid var(--gold);
+    margin: 2em 0;
+    padding: 0.5em 0 0.5em 1.5em;
+    color: var(--ink);
+  }
+  & ul, & ol { margin: 1.25em 0; padding-left: 1.5em; }
+  & li { margin: 0.4em 0; }
+  & ul li { list-style: disc; }
+  & ol li { list-style: decimal; }
+  & img { border-radius: 4px; margin: 2em 0; width: 100%; }
+  & figure { margin: 2em 0; }
+  & figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.8125rem;
+    color: var(--muted-foreground);
+    text-align: center;
+    margin-top: 0.75em;
+  }
+  & table {
+    width: 100%;
+    margin: 2em 0;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  & th, & td {
+    padding: 0.75em 1em;
+    border-bottom: 1px solid var(--rule);
+    text-align: left;
+  }
+  & th {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted-foreground);
+  }
+  & hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5em 0; }
+}
+
+/* Eyebrow / kicker label */
+@utility eyebrow {
+  font-family: var(--font-ui);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
