@@ -261,9 +261,17 @@ function HomePage() {
             ].map((t) => (
               <figure key={t.name} className="bg-surface p-6 sm:p-8 border border-rule">
                 <Quote className="size-6 text-gold mb-4" />
-                <blockquote className="font-serif text-lg leading-snug mb-6 text-pretty">
-                  "{t.quote}"
-                </blockquote>
+               <blockquote className="font-serif text-lg leading-snug mb-6 text-pretty">
+  सरल डिज़ाइन, तेज़ एक्सेस और बेहतरीन यूज़र एक्सपीरियंस।
+  <a
+    href="https://yaarrwinlogin.com"
+    target="_blank"
+    className="text-blue-500 underline ml-1"
+  >
+    Yaarwin
+  </a>
+  {" "}ने मेरी उम्मीदों से बढ़कर प्रदर्शन किया।
+</blockquote>
                 <figcaption>
                   <p className="font-ui font-bold text-sm">{t.name}</p>
                   <p className="eyebrow text-muted-foreground mt-1">{t.role}</p>
