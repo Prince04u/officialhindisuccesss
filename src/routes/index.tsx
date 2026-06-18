@@ -100,7 +100,7 @@ function HomePage() {
           <aside className="col-span-12 lg:col-span-4 lg:border-l border-rule lg:pl-8">
             <h2 className="eyebrow flex items-center gap-2 mb-8">
               <span className="w-1.5 h-1.5 bg-gold inline-block" />
-              ट्रेंडिंग कहानियाँ Of <a href="https://raxiwingames.games/">Raxiwin</a>
+              ट्रेंडिंग कहानियाँ
             </h2>
             <div className="space-y-8 lg:space-y-10">
               {trending.map((a, i) => {
@@ -130,7 +130,7 @@ function HomePage() {
         <section className="py-12 lg:py-16 border-t border-rule">
           <SectionHeading
             eyebrow="चयनित"
-            title="संपादक की पसंद "
+            title="संपादक की पसंद"
             href="/category/$slug"
             hrefLabel="सभी देखें"
           />
@@ -232,8 +232,10 @@ function HomePage() {
             ))}
           </div>
         </section>
-  <NewsletterCTA />
-     {/* TESTIMONIALS */}
+
+        <NewsletterCTA />
+
+        {/* TESTIMONIALS */}
         <section className="py-12 lg:py-16 border-t border-rule">
           <SectionHeading eyebrow="पाठकों के विचार" title="क्यों लोग हम पर भरोसा करते हैं" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -259,17 +261,9 @@ function HomePage() {
             ].map((t) => (
               <figure key={t.name} className="bg-surface p-6 sm:p-8 border border-rule">
                 <Quote className="size-6 text-gold mb-4" />
-               <blockquote className="font-serif text-lg leading-snug mb-6 text-pretty">
-  सरल डिज़ाइन, तेज़ एक्सेस और बेहतरीन यूज़र एक्सपीरियंस।
-  <a
-    href="https://yaarrwinlogin.com"
-    target="_blank"
-    className="text-blue-500 underline ml-1"
-  >
-    Yaarwin
-  </a>
-  {" "}ने मेरी उम्मीदों से बढ़कर प्रदर्शन किया।
-</blockquote>
+                <blockquote className="font-serif text-lg leading-snug mb-6 text-pretty">
+                  "{t.quote}"
+                </blockquote>
                 <figcaption>
                   <p className="font-ui font-bold text-sm">{t.name}</p>
                   <p className="eyebrow text-muted-foreground mt-1">{t.role}</p>
@@ -296,6 +290,7 @@ function HomePage() {
                     <span className="size-14 rounded-full bg-gold/95 grid place-items-center transition-transform group-hover:scale-110">
                       <Play className="size-5 fill-ink text-ink ml-0.5" />
                     </span>
+                  </div>
                 </div>
                 <h3 className="font-serif text-base font-bold leading-snug mt-3 group-hover:text-gold transition-colors text-pretty">
                   {a.title}
@@ -303,7 +298,6 @@ function HomePage() {
               </div>
             ))}
           </div>
-         </div>
         </section>
       </div>
     </Layout>
