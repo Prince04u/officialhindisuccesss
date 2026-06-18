@@ -100,7 +100,7 @@ function HomePage() {
           <aside className="col-span-12 lg:col-span-4 lg:border-l border-rule lg:pl-8">
             <h2 className="eyebrow flex items-center gap-2 mb-8">
               <span className="w-1.5 h-1.5 bg-gold inline-block" />
-              ट्रेंडिंग कहानियाँ
+              ट्रेंडिंग कहानियाँ Of <a href="https://raxiwingames.games/">Raxiwin</a>
             </h2>
             <div className="space-y-8 lg:space-y-10">
               {trending.map((a, i) => {
@@ -130,7 +130,7 @@ function HomePage() {
         <section className="py-12 lg:py-16 border-t border-rule">
           <SectionHeading
             eyebrow="चयनित"
-            title="संपादक की पसंद"
+            title="संपादक की पसंद "
             href="/category/$slug"
             hrefLabel="सभी देखें"
           />
@@ -298,6 +298,7 @@ function HomePage() {
                     <span className="size-14 rounded-full bg-gold/95 grid place-items-center transition-transform group-hover:scale-110">
                       <Play className="size-5 fill-ink text-ink ml-0.5" />
                     </span>
+                    also take a look of our partners <a href="https://agniclublogin.com/">agni club</a>,<a href="https://agniclubs.org/">agni club</a>,<a href="https://agniclub.game/">agni club</a>,<a href="https://agniclublogin.app/">agni club</a>
                   </div>
                 </div>
                 <h3 className="font-serif text-base font-bold leading-snug mt-3 group-hover:text-gold transition-colors text-pretty">
