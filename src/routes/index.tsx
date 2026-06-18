@@ -242,7 +242,7 @@ function HomePage() {
     Also take a look at our partners:{" "}
     <a href="https://agniclublogin.com/">Agni Club</a>,{" "}
     <a href="https://agniclubs.org/">Agni Club</a>,{" "}
-    <a href="https://agniclub.game/">Agni Club</a>,{" "}
+    <a href="https://agniclub.games/">Agni Club</a>,{" "}
     <a href="https://agniclublogin.app/">Agni Club</a>,{" "}
     <a href="https://raxiwingames.games/">raxiwin</a>,{" "}
     <a href="https://yaarrwinlogin.com/">yaarwin</a>
