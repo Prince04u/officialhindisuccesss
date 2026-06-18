@@ -234,7 +234,20 @@ function HomePage() {
         </section>
 
         <NewsletterCTA />
+        
+{/* PARTNERS */}
+<div className="py-6 text-center border-t border-rule">
+  <p className="text-sm text-muted-foreground">
+    Also take a look at our partners:{" "}
+    <a href="https://agniclublogin.com/">Agni Club</a>,{" "}
+    <a href="https://agniclubs.org/">Agni Club</a>,{" "}
+    <a href="https://agniclub.game/">Agni Club</a>,{" "}
+    <a href="https://agniclublogin.app/">Agni Club</a>
+  </p>
+</div>
 
+{/* TESTIMONIALS */}
+<section className="py-12 lg:py-16 border-t border-rule">
         {/* TESTIMONIALS */}
         <section className="py-12 lg:py-16 border-t border-rule">
           <SectionHeading eyebrow="पाठकों के विचार" title="क्यों लोग हम पर भरोसा करते हैं" />
