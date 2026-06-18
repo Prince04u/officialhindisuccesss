@@ -232,28 +232,18 @@ function HomePage() {
             ))}
           </div>
         </section>
-
-        <NewsletterCTA />
-        
-<p className="text-sm text-muted-foreground">
-  Also take a look at our partners:{" "}
-  <a href="https://agniclublogin.com/" target="_blank" rel="noopener noreferrer">
-    Agni Club
-  </a>
-  ,{" "}
-  <a href="https://agniclubs.org/" target="_blank" rel="noopener noreferrer">
-    Agni Club
-  </a>
-  ,{" "}
-  <a href="https://agniclub.game/" target="_blank" rel="noopener noreferrer">
-    Agni Club
-  </a>
-  ,{" "}
-  <a href="https://agniclublogin.app/" target="_blank" rel="noopener noreferrer">
-    Agni Club
-  </a>
-</p>
-
+<>
+  <NewsletterCTA />
+  <section className="py-8 border-t border-rule text-center">
+    <p className="text-sm text-muted-foreground">
+      Also take a look at our partners:{" "}
+      <a href="https://agniclublogin.com/">Agni Club</a>,{" "}
+      <a href="https://agniclubs.org/">Agni Club</a>,{" "}
+      <a href="https://agniclub.game/">Agni Club</a>,{" "}
+      <a href="https://agniclublogin.app/">Agni Club</a>
+    </p>
+  </section>
+</>
         {/* TESTIMONIALS */}
         <section className="py-12 lg:py-16 border-t border-rule">
           <SectionHeading eyebrow="पाठकों के विचार" title="क्यों लोग हम पर भरोसा करते हैं" />
