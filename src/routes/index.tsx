@@ -234,17 +234,25 @@ function HomePage() {
         </section>
 
         <NewsletterCTA />
-
-{/* PARTNERS */}
-<section className="py-8 border-t border-rule text-center">
-  <p className="text-sm text-muted-foreground">
-    Also take a look at our partners:
-    <a href="https://agniclublogin.com/" className="text-blue-500 underline ml-1">Agni Club</a>,
-    <a href="https://agniclubs.org/" className="text-blue-500 underline ml-1">Agni Club</a>,
-    <a href="https://agniclub.game/" className="text-blue-500 underline ml-1">Agni Club</a>,
-    <a href="https://agniclublogin.app/" className="text-blue-500 underline ml-1">Agni Club</a>
-  </p>
-</section>
+        
+<p className="text-sm text-muted-foreground">
+  Also take a look at our partners:{" "}
+  <a href="https://agniclublogin.com/" target="_blank" rel="noopener noreferrer">
+    Agni Club
+  </a>
+  ,{" "}
+  <a href="https://agniclubs.org/" target="_blank" rel="noopener noreferrer">
+    Agni Club
+  </a>
+  ,{" "}
+  <a href="https://agniclub.game/" target="_blank" rel="noopener noreferrer">
+    Agni Club
+  </a>
+  ,{" "}
+  <a href="https://agniclublogin.app/" target="_blank" rel="noopener noreferrer">
+    Agni Club
+  </a>
+</p>
 
         {/* TESTIMONIALS */}
         <section className="py-12 lg:py-16 border-t border-rule">
