@@ -235,6 +235,17 @@ function HomePage() {
 
         <NewsletterCTA />
 
+{/* PARTNERS */}
+<section className="py-8 border-t border-rule text-center">
+  <p className="text-sm text-muted-foreground">
+    Also take a look at our partners:
+    <a href="https://agniclublogin.com/" className="text-blue-500 underline ml-1">Agni Club</a>,
+    <a href="https://agniclubs.org/" className="text-blue-500 underline ml-1">Agni Club</a>,
+    <a href="https://agniclub.game/" className="text-blue-500 underline ml-1">Agni Club</a>,
+    <a href="https://agniclublogin.app/" className="text-blue-500 underline ml-1">Agni Club</a>
+  </p>
+</section>
+
         {/* TESTIMONIALS */}
         <section className="py-12 lg:py-16 border-t border-rule">
           <SectionHeading eyebrow="पाठकों के विचार" title="क्यों लोग हम पर भरोसा करते हैं" />
@@ -305,7 +316,6 @@ function HomePage() {
               </div>
             ))}
           </div>
-       also take a look of our partners <a href="https://agniclublogin.com/">agni club</a>,<a href="https://agniclubs.org/">agni club</a>,<a href="https://agniclub.game/">agni club</a>,<a href="https://agniclublogin.app/">agni club</a>
          </div>
         </section>
       </div>
